@@ -1,0 +1,415 @@
+/* *{
+  border: 3px solid red;
+} */
+
+@import url("https://fonts.googleapis.com/css2?family=Epilogue:wght@300&family=Fraunces:opsz@9..144&family=Hanken+Grotesk:ital,wght@1,300&family=Inter&family=Montserrat&family=Outfit:wght@300&family=Poppins:ital,wght@1,200&display=swap");
+
+body {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  font-family: "Epilogue", sans-serif;
+}
+
+main {
+  margin-top: 50px;
+  margin-left: 180px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto;
+  grid-column-gap: 50px;
+}
+
+header {
+  max-width: 1300px;
+  max-height: 100px;
+}
+
+.first-image {
+  margin-top: -30px;
+  max-height: 500px;
+  aspect-ratio: 1/1.35;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+nav ul .right,
+.left {
+  display: flex;
+  list-style-type: none;
+  justify-content: space-around;
+}
+
+nav ul li a {
+  margin-right: 8px;
+  margin-left: 40px;
+  text-decoration: none;
+  color: hsl(0, 0%, 41%);
+}
+
+.last {
+  border: 1px solid black;
+  border-radius: 0.5rem;
+  padding-left: 51px;
+  padding-right: 51px;
+  position: relative;
+  left: 30px;
+  z-index: 7;
+}
+
+.login {
+  position: relative;
+  left: 30px;
+}
+
+main .text h1 {
+  line-height: 85%;
+  font-size: 65px;
+  font-weight: bold;
+  max-width: 30vw;
+}
+
+main .text p {
+  max-width: 65%;
+  margin-bottom: 15px;
+  color: hsl(0, 0%, 8%);
+}
+
+main .text button {
+  padding: 13px;
+  padding-left: 7%;
+  padding-right: 7%;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 0.5rem;
+  margin-top: 25px;
+}
+
+main .text button:hover {
+  background-color: rgb(255, 255, 255);
+  color: black;
+  border: 1px solid black;
+  transition: ease 0.1s;
+  cursor: pointer;
+}
+
+.text .text-logos {
+  margin-top: 115px;
+  height: 22px;
+  color: hsl(0, 0%, 8%);
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto;
+  grid-gap: 3px;
+}
+
+.text-logos :nth-child(2) {
+  height: 32px;
+  margin-left: 15px;
+}
+
+.right li a:hover {
+  color: black;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  left: 100px;
+  top: 51px;
+  box-shadow: 2px 2px 9px -2px grey;
+  border-radius: 10%;
+  line-height: 0px;
+  margin: 0%;
+  padding: 10px;
+  padding-left: 25px;
+  padding-right: 25px;
+  background-color: white;
+}
+
+.dropdown:hover .dropdown-content {
+  display: flex;
+  flex-direction: column;
+  line-height: 25px;
+}
+
+.dropdown-content a {
+  text-decoration: none;
+  color: hsl(0, 0%, 52%);
+}
+
+.dropdown-content img {
+  margin-right: 10px;
+}
+
+.snap {
+  height: fit-content;
+}
+
+.features:hover {
+  color: black;
+}
+
+.dropdown:hover img {
+  transform: rotate(180deg) scale(1.2);
+}
+
+.company:hover {
+  color: black;
+}
+
+.dropdown-content-two {
+  display: none;
+  position: absolute;
+  left: 310px;
+  top: 50px;
+  box-shadow: 2px 2px 9px -2px grey;
+  border-radius: 10%;
+  padding: 18px 25px 28px;
+  background-color: white;
+  z-index: 1;
+}
+
+.dropdown-content-two a {
+  text-decoration: none;
+  color: hsl(0, 0%, 52%);
+}
+
+.dropdown-two:hover .dropdown-content-two {
+  display: flex;
+  flex-direction: column;
+  line-height: 25px;
+  margin-left: none;
+}
+
+.dropdown-two:hover img {
+  transform: rotate(180deg) scale(1.2);
+}
+
+.about:hover {
+  color: black;
+}
+
+.mobile-image {
+  display: none;
+}
+
+.res-nav {
+  display: none;
+}
+
+.close-icon {
+  display: none;
+  position: absolute;
+  top: 12px;
+  right: 24px;
+  z-index: 5;
+}
+
+.menu-icon {
+  display: none;
+}
+
+.last {
+  border: 1px solid black;
+  padding: 1px;
+  padding-left: 80px;
+  padding-right: 80px;
+  position: absolute;
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2px;
+  right: 20%;
+}
+
+@media (width <= 530px) {
+  .dropdowwn,
+  .dropdowwn-two,
+  .careers,
+  .about,
+  .features,
+  .company,
+  .login,
+  .first-image {
+    display: none;
+  }
+
+  body {
+    padding: 0%;
+    margin: 0%;
+    position: relative;
+    right: 13px;
+  }
+
+  .right {
+    opacity: 0;
+  }
+
+  /* .last{
+    display: none;
+  } */
+
+  .res-nav .login {
+    display: block;
+    position: relative;
+    left: 43%;
+  }
+
+  .snap {
+    position: absolute;
+    left: 20px;
+  }
+
+  .right-sidenav {
+    display: flex;
+    flex-direction: column;
+  }
+
+  main {
+    /* display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: repeat(2, 1fr); */
+    height: 100vh;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    margin-right: 180px;
+  }
+
+  .mobile-image {
+    display: block;
+    margin-top: calc(80vh * 0.15);
+    height: min-content;
+    width: fit-content;
+    width: 440px;
+  }
+
+  main .text {
+    margin-right: 15px;
+  }
+
+  main .text h1 {
+    letter-spacing: -1.1px;
+    line-height: 100%;
+    font-size: 52px;
+    min-width: max-content;
+    margin-top: 35px;
+    margin-left: 10px;
+  }
+
+  main .text p {
+    color: hsl(0, 0%, 41%);
+    margin-left: 15%;
+    max-width: 20.9rem;
+    position: relative;
+    bottom: 20px;
+    padding-top: 0;
+    text-align: center;
+  }
+
+  main .text button {
+    margin-left: 33%;
+    position: relative;
+    bottom: 32px;
+  }
+
+  .text .text-logos {
+    position: relative;
+    bottom: 100px;
+    left: 2px;
+    height: 2px;
+    width: 1px;
+    grid-gap: 30px;
+  }
+
+  .res-nav {
+    box-sizing: content-box;
+    display: none;
+    background-color: #ffffff;
+    list-style-type: none;
+    line-height: 35px;
+    height: 127.5vh;
+    width: 40vw;
+    padding-top: 50px;
+    padding-right: 95px;
+    z-index: 4;
+    position: absolute;
+    margin-bottom: 30px;
+    right: 0%;
+    top: 0%;
+  }
+
+  .res-nav li,
+  a {
+    margin-top: 10px;
+  }
+
+  .res-nav a {
+    color: hsl(0, 0%, 41%);
+    text-decoration: none;
+  }
+
+  .res-nav #features-content {
+    display: none;
+  }
+
+  .res-nav #company-content {
+    display: none;
+  }
+
+  .feat-container:hover #features-content {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    left: 60px;
+  }
+
+  .res-nav .feat:hover img {
+    transform: rotate(180deg) scale(1.2);
+  }
+
+  .res-nav .comp:hover img {
+    transform: rotate(180deg) scale(1.2);
+  }
+
+  .comp-container:hover #company-content{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    left: 60px;
+  }
+
+  #features-content img {
+    height: 20px;
+    margin-right: 7px;
+  }
+
+  .menu-icon {
+    z-index: 5;
+    display: flex;
+    position: absolute;
+    top: 6px;
+    right: 22px;
+    margin-top: 10px;
+  }
+}
+
+@media (height <= 562px) {
+  .mobile-image {
+    margin-top: 230px;
+  }
+}
+
+@media (height <= 350px) {
+  .mobile-image {
+    margin-top: 350px;
+  }
+}

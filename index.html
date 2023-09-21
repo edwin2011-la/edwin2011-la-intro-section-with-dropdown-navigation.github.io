@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Frontend Mentor | Intro section with dropdown navigation</title>
+  </head>
+  <body>
+    <span class="cover"></span>
+    <header>
+      <nav>
+        <ul>
+          <div class="left">
+            <img src="images/logo.svg" class="snap" alt="" />
+            <div class="dropdown">
+              <li>
+                <a href="#" class="features"
+                  >Features <img src="images/icon-arrow-down.svg" alt=""
+                /></a>
+              </li>
+              <div class="dropdown-content">
+                <a href="#"
+                  ><img src="images/icon-todo.svg" alt="" id="content" /> Todo
+                  List</a
+                >
+                <a href="#"
+                  ><img src="images/icon-calendar.svg" alt="" id="content" />
+                  Calender</a
+                >
+                <a href="#"
+                  ><img src="images/icon-reminders.svg" alt="" id="content" />
+                  Reminders</a
+                >
+                <a href="#"
+                  ><img src="images/icon-planning.svg" alt="" id="content" />
+                  Planning</a
+                >
+              </div>
+            </div>
+            <div class="dropdown-two">
+              <li>
+                <a href="#" class="company"
+                  >Company <img src="images/icon-arrow-down.svg" alt=""
+                /></a>
+              </li>
+              <div class="dropdown-content-two">
+                <a href="#">History</a>
+                <a href="#">Our Team</a>
+                <a href="#">Blog</a>
+              </div>
+            </div>
+            <li><a href="#" class="careers">Careers</a></li>
+            <li><a href="#" class="about">About</a></li>
+          </div>
+          <div class="right">
+            <li><a href="#" class="login-h">Login</a></li>
+            <li><a class="last-h" href="#">Register</a></li>
+          </div>
+          <div class="menu-icon">
+            <img src="images/icon-menu.svg" alt="" />
+          </div>
+          <div class="close-icon">
+            <img src="images/icon-close-menu.svg" alt="" />
+          </div>
+          <div class="res-nav">
+            <div class="feat-container">
+              <li class="feat">
+                <a href="#"
+                  >Features <img src="images/icon-arrow-down.svg"
+                /></a>
+              </li>
+              <div id="features-content">
+                <a href="#"
+                  ><img src="images/icon-todo.svg" alt="" id="content" /> Todo
+                  List</a
+                >
+                <a href="#"
+                  ><img src="images/icon-calendar.svg" alt="" id="content" />
+                  Calender</a
+                >
+                <a href="#"
+                  ><img src="images/icon-reminders.svg" alt="" id="content" />
+                  Reminders</a
+                >
+                <a href="#"
+                  ><img src="images/icon-planning.svg" alt="" id="content" />
+                  Planning</a
+                >
+              </div>
+            </div>
+            <div class="comp-container">
+              <li class="comp">
+                <a href="#"
+                  >Company <img src="images/icon-arrow-down.svg" alt=""
+                /></a>
+              </li>
+              <div id="company-content">
+                <a href="#">History</a>
+                <a href="#">Our Team</a>
+                <a href="#">Blog</a>
+              </div>
+            </div>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#" class="about">About</a></li>
+            <div class="right-sidenav">
+              <li><a class="login" href="#">Login</a></li>
+              <li><a class="last" href="#">Register</a></li>
+            </div>
+          </div>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div class="text">
+        <h1>Make remote work</h1>
+        <p>
+          Get your team in sync, no matter your location. Streamline processes,
+          create team rituals, and watch productivity soar.
+        </p>
+        <button>Learn more</button>
+        <div class="text-logos">
+          <img id="logos" src="images/client-databiz.svg" alt="" />
+          <img id="logos" src="images/client-audiophile.svg" alt="" />
+          <img id="logos" src="images/client-meet.svg" alt="" />
+          <img id="logos" src="images/client-maker.svg" alt="" />
+        </div>
+      </div>
+      <img class="first-image" src="images/image-hero-desktop.png" alt="" />
+      <div class="mobile-image-container">
+        <img src="images/image-hero-mobile.png" class="mobile-image" alt="" />
+      </div>
+    </main>
+    <script src="main.js"></script>
+  </body>
+</html>
